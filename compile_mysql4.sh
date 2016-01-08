@@ -7,7 +7,7 @@ mkdir -p /db /usr/local/src
 #make and install mysql4
 
 cd /usr/local/src/
-tar -xvzf mysql-4.1.25.tar.gz
+tar -xvzf /root/mysql-4.1.25.tar.gz
 cd mysql-4.1.25/
 ./configure --prefix=/usr/local/mysql --localstatedir=/db
 make && make install
