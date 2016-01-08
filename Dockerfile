@@ -18,10 +18,9 @@ RUN echo "$TZ" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
 #add mysql user and sources
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-ADD mysql-4.1.25.tar.gz /usr/local/src
 
 #compile mysql4 from source
-COPY compile_mysql4.sh /root
+COPY compile_mysql4.sh mysql-4.1.25.tar.gz /root/
 RUN chmod +x /root/compile_mysql4.sh
 RUN /root/compile_mysql4.sh
 
