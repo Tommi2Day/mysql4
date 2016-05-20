@@ -1,5 +1,7 @@
 # mysql4
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/tommi2day/mysql4.svg)](https://hub.docker.com/r/tommi2day/mysql4/)
+
 ## A Mysql4 installation running on Docker
 In 2015 when Mysql 5.7 ist current, a MySQL4 environment is still needed as requirement from mature programs (CAO-Faktura, ...)
 
